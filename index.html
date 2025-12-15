@@ -23,11 +23,11 @@
             </nav>
         </div>
         <div class="Barra_busqueda">
-            <input type="text" placeholder="Search for products...">
+            <input type="text" placeholder="🔍Search for products...">
         </div>
         <div class="header_iconos">
-            <i class="fa-regular fa-user"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <button><a href=""><img src="media/icon car shop.png" alt=""></a></button>
+            <button><a href=""><img src="media/icon user.png" alt=""></a></button>
         </div>
     </header>
     <!-- Secciones -->
@@ -65,9 +65,246 @@
         <button><img src="media/prada_logo.png" alt="prada logo"></button>
         <button><img src="media/calvin-klein-logo.png" alt="CK logo"></button>
     </section>
-
+    <!-- Seccion para los items en venta -->
     <section class="items">
 
+            <!-- seccion para los "new arrivals" -->
+            <h1>NEW ARRIVALS</h1>
+            <div class="show_items">
+                <!-- item 1 -->
+                <div>
+                    <button><img src="media/items/item1.png" alt="camisa">
+                        <a href="">
+
+                        </a>
+                    </button>
+                    <h2>T-SHIRT WITH TAPE DETAILS</h2>
+                    <p>⭐⭐⭐⭐ 4.5/5</p>
+                    <h3>120$</h3>
+                </div>
+                <!-- item  2 -->
+                <div>
+                    <button><img src="media/items/item2.png" alt="camisa">
+                        <a href="">
+
+                        </a>
+                    </button>
+                    <h2>SKINNY FIT JEANS</h2>
+                    <p>⭐⭐⭐ 3.5/5</p>
+                    <h3>240$ <del><span>260$</span></del><span class="discount_view">20%</span></h3>
+                </div>
+                <!-- item 3 -->
+                <div>
+                    <button><img src="media/items/item3.png" alt="jean">
+                        <a href="">
+                        </a>
+                    </button>
+                    <h2>CHECKERED SHIRT</h2>
+                    <p>⭐⭐⭐⭐ 4.5/5</p>
+                    <h3>180$</h3>
+                </div>
+                <!-- item4 -->
+                <div>
+                    <button><img src="media/items/item4.png" alt="camisa">
+                        <a href="">
+                        </a>
+                    </button>
+                    <h2>SLEEVE STRIPED T-SHIRT</h2>
+                    <p>⭐⭐⭐⭐ 4.5/5</p>
+                    <h3>130$ <del><span>160$</span></del><span class="discount_view">30%</span></h3>
+                </div>
+            </div>
+
+        <button id="view_button1">view all</button>
+
+        <h1>top sellings</h1>
+        <div class="show_items">
+            <!-- item 5 -->
+            <div>
+                <button><img src="media/items/item5.png" alt="camisa">
+                    <a href="">
+                    </a>
+                </button>
+                <h2>VERTICAL STRIPED SHIRT</h2>
+                <p>⭐⭐⭐⭐⭐ 5.0/5</p>
+                <h3>212$ <del><span>232</span></del> <span class="discount_view">20%</span></h3>
+            </div>
+            <!-- item 6 -->
+            <div>
+                <button><img src="media/items/item6.png" alt="camisa">
+                    <a href="">
+                    </a>
+                </button>
+                <h2>COURAGE GRAPHIC T-SHIRT</h2>
+                <p>⭐⭐⭐⭐ 4.0/5</p>
+                <h3>145$</h3>
+            </div>
+            <!-- item 7 -->
+            <div>
+                <button><img src="media/items/item7.png" alt="shorts">
+                    <a href="">
+                    </a>
+                </button>
+                <h2>LOOSE FIT BERMUDA SHORTS</h2>
+                <p>⭐⭐⭐ 3.0/5</p>
+                <h3>80$</h3>
+            </div>
+            <!-- item 8 -->
+            <div>
+                <button><img src="media/items/item8.png" alt="camisa">
+                    <a href="">
+                    </a>
+                </button>
+                <h2>FADED SKINNY JEANS</h2>
+                <p>⭐⭐⭐⭐ 4.5/5</p>
+                <h3>210$</h3>
+            </div>
+        </div>
+
+        <button id="view_button2">view all</button>
     </section>
+
+    <!-- seccion de estilos para ropa-->
+    <section class="dress-style">
+        <h2>BROWSE BY dress STYLE</h2>
+        <div class="style-grid">
+            <div class="style-card casual">
+                <h3>Casual</h3>
+                <img src="media/dress style/casual style.png"
+                    alt="Casual style">
+            </div>
+
+            <div class="style-card formal">
+                <h3>Formal</h3>
+                <img src="media/dress style/formal style.png"
+                    alt="Formal style">
+            </div>
+
+            <div class="style-card party">
+                <h3>Party</h3>
+                <img src="media/dress style/party style.png"
+                    alt="Party style">
+            </div>
+
+            <div class="style-card gym">
+                <h3>Gym</h3>
+                <img src="media/dress style/gym style.png"
+                    alt="Gym style">
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion de comentarios -->
+    <section class="comentarios">
+        <div class="upper_info">
+            <h2>OUR HAPPY CUSTOMERS</h2>
+            <p>←→</p>
+        </div>
+
+        <div class="bloque-comentarios">
+            <div class="comentario_usuario">
+                <p>⭐⭐⭐⭐⭐ </p>
+                <h3>Sarah M.✅</h3>
+                <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+            </div>
+            <div class="comentario_usuario">
+                <p>⭐⭐⭐⭐⭐ </p>
+                <h3>Alex K.✅</h3>
+                <p>""Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”</p>
+            </div>
+            <div class="comentario_usuario">
+                <p>⭐⭐⭐⭐⭐ </p>
+                <h3>James L.✅</h3>
+                <p>""As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- NEWSLETTER -->
+<section class="newsletter">
+    <div class="newsletter-content">
+        <h2>STAY UP TO DATE ABOUT OUR<br>LATEST OFFERS</h2>
+
+        <div class="newsletter-form">
+            <div class="input-box">
+                <p>✉️</p>
+                <input type="email" placeholder="Enter your email address">
+            </div>
+            <button>Subscribe to Newsletter</button>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-top">
+
+        <div class="footer-brand">
+            <h3>CRUD.STORE</h3>
+            <p>
+                We have clothes that suits your style and which you’re proud to wear.
+                From women to men.
+            </p>
+
+            <div class="socials">
+                <img src="media/social media/social media 1.png" alt="Twitter">
+                <img src="media/social media/social media 2.png" alt="Facebook">
+                <img src="media/social media/social media 3.png" alt="Instagram">
+                <a href="https://github.com/AndresHidrobo" target="_blank"><img src="media/social media/social media 4.png" alt="Github"></a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <div>
+                <h4>COMPANY</h4>
+                <p>About</p>
+                <p>Features</p>
+                <p>Works</p>
+                <p>Career</p>
+            </div>
+
+            <div>
+                <h4>HELP</h4>
+                <p>Customer Support</p>
+                <p>Delivery Details</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+
+            <div>
+                <h4>FAQ</h4>
+                <p>Account</p>
+                <p>Manage Deliveries</p>
+                <p>Orders</p>
+                <p>Payments</p>
+            </div>
+
+            <div>
+                <h4>RESOURCES</h4>
+                <p>Free eBooks</p>
+                <p>Development Tutorial</p>
+                <p>How to - Blog</p>
+                <p>Youtube Playlist</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Crudzaso.com © 2025, All Rights Reserved</p>
+
+        <div class="payments">
+            <img src="media/bancos/pago1.png" alt="Mercado Libre">
+            <img src="media/bancos/pago2.png" alt="Visa">
+            <img src="media/bancos/pago3.png" alt="MasterCard">
+            <img src="media/bancos/pago4.png" alt="PayPal">
+            <img src="media/bancos/pago5.png" alt="Apple Pay">
+            <img src="media/bancos/pago6.png" alt="Google Pay">
+        </div>
+    </div>
+</footer>
+
+
 </body>
 </html>
