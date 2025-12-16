@@ -2,19 +2,23 @@
     font-family: "Lilita1";
     src: url("../fonts/LilitaOne-Regular.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Ubuntu";
     src: url("../fonts/Ubuntu-Regular.ttf") format("truetype");
 }
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
-body{
+
+body {
     font-family: Lilita1;
 }
-header{
+
+header {
     font-family: Ubuntu;
     display: flex;
     align-items: center;
@@ -23,24 +27,33 @@ header{
 }
 
 /*sección en el tope superior */
-.top{
+.top {
     background: black;
     color: white;
     text-align: center;
 }
-.top a{
+
+.top a {
     color: aliceblue;
 }
+
 /* Barra de navegacion del header */
-.Logo{
+.Logo {
     font-family: Lilita1;
     font-size: 33.45px;
     font-weight: 400;
 }
-nav a{
+
+.Logo a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav a {
     color: black;
 }
-.nav-flex{
+
+.nav-flex {
     display: flex;
     list-style: none;
     gap: 20px;
@@ -61,8 +74,9 @@ nav a{
     border-radius: 20px;
     outline: none;
 }
+
 /* iconos en header */
-.header_iconos button{
+.header_iconos button {
     background: none;
     border: none;
 }
@@ -70,21 +84,26 @@ nav a{
 
 /* Hero */
 
-.Hero{
+.Hero {
     background: #F2F0F1;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  /* 3 columnas iguales */
-    gap: 20px;       /* separación entre tarjetas */
+    grid-template-columns: repeat(2, 1fr);
+    /* 3 columnas iguales */
+    gap: 20px;
+    /* separación entre tarjetas */
 }
-.Hero p{
+
+.Hero p {
     font-family: Ubuntu;
     margin: 20px;
 }
-.Hero_text h1{
+
+.Hero_text h1 {
     font-size: 64px;
     margin: 20px;
 }
-.shop-button{
+
+.shop-button {
     margin: 40px;
     background: #000;
     color: white;
@@ -93,63 +112,73 @@ nav a{
     border: none;
     cursor: pointer;
 }
-.stats{
+
+.stats {
     display: flex;
     margin-left: 50px;
     margin-top: 30px;
     gap: 40px;
 }
-.stats h2{
+
+.stats h2 {
     padding-top: 60px;
     font-size: 40px;
 }
-.stats p{
+
+.stats p {
     font-family: Ubuntu;
     font-size: 16px;
 }
-.hero_img img{
+
+.hero_img img {
     height: 663px;
     width: 940px;
 }
 
 /* Marcas */
-.Marcas{
+.Marcas {
     display: flex;
     background: rgb(189, 189, 189);
     justify-content: space-evenly;
     align-items: center;
 }
-.Marcas button{
+
+.Marcas button {
     cursor: pointer;
     border: none;
     background: rgb(189, 189, 189);
 }
-.Marcas img{
+
+.Marcas img {
     height: 80px;
     width: 200px;
 }
 
 /* Items (new arrival y top sellings) */
-.items h1{
+.items h1 {
     font-size: 48px;
     text-align: center;
 }
-.items{
+
+.items {
     margin-top: 40px;
     justify-content: space-evenly;
     align-items: center;
 }
-.items img{
+
+.items img {
     height: 296px;
     width: 244px;
     border-radius: 15%;
 }
-.items button{
+
+.items button {
     cursor: pointer;
     border: none;
     border-radius: 15%;
 }
-.show_items{
+
+.show_items {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -157,16 +186,19 @@ nav a{
     gap: 20px;
 }
 
-.show_items span{
+.show_items span {
     color: #00000066;
 }
-.discount_view{
+
+.discount_view {
     color: #b30a0a;
     background: #df6c6c;
     border-radius: 5px;
 }
-#view_button1{
-    margin: 40px;
+
+#view_button1 {
+    display: block;
+    margin: 40px auto;
     background: #ffffff;
     color: rgb(0, 0, 0);
     padding: 12px 25px;
@@ -174,8 +206,10 @@ nav a{
     border: rgb(0, 0, 0) 1px solid;
     cursor: pointer;
 }
-#view_button2{
-    margin: 40px;
+
+#view_button2 {
+    display: block;
+    margin: 40px auto;
     background: #ffffff;
     color: rgb(0, 0, 0);
     padding: 12px 25px;
@@ -235,39 +269,39 @@ nav a{
 }
 
 /* seccion de comentarios */
-.comentarios{
+.comentarios {
     align-items: center;
     justify-content: space-between;
 }
-.upper_info{
+
+.upper_info {
     display: flex;
     justify-content: center;
     justify-content: space-between;
 }
-.upper_info p{
+
+.upper_info p {
     font-size: 50px;
 }
 
-.bloque-comentarios{
+.bloque-comentarios {
     display: flex;
     padding: 20px;
     align-items: center;
     justify-content: space-evenly;
     gap: 40px;
 }
-.comentario_usuario{
+
+.comentario_usuario {
     border: rgb(199, 198, 198) 1px solid;
     padding: 15px;
     border-radius: 20px;
     line-height: 1.5em;
 }
-.comentario_usuario p{
+
+.comentario_usuario p {
     font-family: ubuntu;
 }
-
-
-
-/* ------------------------------------------------------------------------ */
 
 /* NEWSLETTER */
 .newsletter {
@@ -329,7 +363,8 @@ nav a{
     gap: 50px;
     font-family: Ubuntu;
 }
-.footer-top h3{
+
+.footer-top h3 {
     font-family: Lilita1;
 }
 
@@ -348,7 +383,8 @@ nav a{
     margin-top: 20px;
     font-size: 18px;
 }
-.socials img{
+
+.socials img {
     background: white;
     border: 1px rgb(187, 187, 187) solid;
     border-radius: 90%;
@@ -390,4 +426,273 @@ nav a{
     cursor: pointer;
     height: 30px;
     margin-left: 10px;
+}
+
+/* ============================================================================================================ */
+/* Estilos para la página de "Product-page"*/
+.map {
+    cursor: pointer;
+    margin: 20px;
+    font-family: Ubuntu;
+    color: rgb(114, 114, 114);
+}
+
+.map a {
+    color: rgb(114, 114, 114);
+    text-decoration: none;
+}
+
+.map span {
+    color: rgb(0, 0, 0);
+}
+
+/* galeria de imagenes */
+.item-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5px;
+}
+
+.item-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.preview-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.preview-img img {
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 202px;
+    padding: 8px;
+    background: #F0EEED;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.main-img {
+    margin: 20px;
+    flex: 1;
+    background: #F0EEED;
+    border-radius: 24px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-img img {
+    height: 90%;
+    width: 100%;
+    cursor: zoom-in;
+}
+
+/* info del producto */
+.text-up {
+    line-height: 60px;
+    margin: 10px
+}
+
+.data-item h1 {
+    font-size: 40px;
+}
+
+.data-item h2 {
+    font-size: 32px;
+}
+
+.data-item p {
+    font-family: Ubuntu;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.data-item span {
+    color: #aaa9a9;
+}
+
+#discount {
+    background: #df6c6c;
+    color: #b30a0a;
+    border-radius: 1em;
+}
+
+.option-menu {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.separador {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.color-btn button {
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.color1 {
+    background: #4F4631;
+}
+
+.color2 {
+    background: #314F4A;
+    color: #314F4A;
+}
+
+.color3 {
+    background: #31344F;
+    color: #31344F;
+}
+
+.size-btn button {
+    padding: 10px 18px;
+    border-radius: 30px;
+    border: none;
+    background: #f1f1f1;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.size-btn .active {
+    background: #000;
+    color: #fff;
+}
+
+.actions {
+    margin-top: 32px;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.quantity {
+
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background: #f1f1f1;
+    padding: 12px 22px;
+    border-radius: 40px;
+}
+
+.quantity button {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Botón */
+.add-cart {
+    flex: 1;
+    border: none;
+    border-radius: 40px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* seccion de review */
+.bloque_comentarios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 5px;
+}
+
+
+/* Header de review*/
+.reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.reviews-header h2 {
+    font-size: 22px;
+}
+
+.reviews-header h2 span {
+    color: #888;
+    font-weight: normal;
+}
+
+/* Actions */
+.reviews-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.icon-btn {
+    border: none;
+    background: #f1f1f1;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.reviews-actions select {
+    padding: 10px 16px;
+    border-radius: 30px;
+    border: none;
+    background: #f1f1f1;
+    cursor: pointer;
+}
+
+.write-review {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 22px;
+    cursor: pointer;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 40px;
+}
+
+.tabs span {
+    padding: 16px 0;
+    color: #888;
+    cursor: pointer;
+}
+
+.tabs .active {
+    color: #000;
+    font-weight: 600;
+    border-bottom: 2px solid #000;
+}
+
+.load-reviews{
+    display: block;
+    margin: 40px auto;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: rgb(0, 0, 0) 1px solid;
+    cursor: pointer;
+    font-size: 16px;
 }
