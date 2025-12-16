@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Casual | CRUD.STORE</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -26,10 +26,196 @@
             <input type="text" placeholder="🔍Search for products...">
         </div>
         <div class="header_iconos">
-            <button><a href=""><img src="media/icon car shop.png" alt=""></a></button>
+            <button><a href="cart.html"><img src="media/icon car shop.png" alt=""></a></button>
             <button><a href=""><img src="media/icon user.png" alt=""></a></button>
         </div>
     </header>
+    <!-- Breadcrumb -->
+    <div class="map">
+        <a href="index.html">Home</a> › <span>Casual</span>
+    </div>
+    <section class="shop-container">
+        <!-- SIDEBAR -->
+        <aside class="filters">
+            <h3>Filters</h3>
+
+            <div class="filter-group">
+                <ul>
+                    <li>T-shirts</li>
+                    <li>Shorts</li>
+                    <li>Shirts</li>
+                    <li>Hoodie</li>
+                    <li>Jeans</li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h4>Price</h4>
+                <input type="range" min="50" max="200">
+                <div class="price-range">$50 - $200</div>
+            </div>
+
+            <div class="filter-group">
+                <h4>Colors</h4>
+                <div class="colors">
+                    <button class="c green"></button>
+                    <button class="c red"></button>
+                    <button class="c yellow"></button>
+                    <button class="c blue"></button>
+                    <button class="c black"></button>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h4>Size</h4>
+                <div class="sizes">
+                    <span>XX-Small</span><span>X-Small</span><span>Small</span><span>Medium</span>
+                    <span class="active">Large</span><span>X-Large</span><span>XX-Large</span>
+                    <span>3X-Large</span><span>4X-Large</span>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h4>Dress Style</h4>
+                <ul>
+                    <li>Casual</li>
+                    <li>Formal</li>
+                    <li>Party</li>
+                    <li>Gym</li>
+                </ul>
+            </div>
+
+            <button class="apply-btn">Apply Filter</button>
+        </aside>
+
+        <!-- PRODUCTS -->
+        <main class="products">
+            <div class="products-header">
+                <h2>Casual</h2>
+                <span>Showing 1–10 of 100 Products  Sort by: <b>Most Popular</b></span>
+            </div>
+
+            <div class="products-grid">
+
+                <!-- PRODUCT CARD -->
+                <!--  Producto 1-->
+                <article class="product-card">
+                    <button>
+                        <a href="Product-page.html">
+                            <img src="media/items/recomendacion2.png" alt="camisa">
+                        </a>
+                        <h2>Gradient Graphic T-shirt</h2>
+                        <p>⭐⭐⭐ 3.5/5</p>
+                        <h3 class="price">145$</h3>
+                    </button>
+                </article>
+                <!--  Producto 2-->
+                <article class="product-card">
+                    <button>
+                        <a href="Product-page.html">
+                            <img src="media/items/recomendacion3.png" alt="camisa">
+                        </a>
+                        <h2>Polo with Tipping Details</h2>
+                        <p>⭐⭐⭐⭐ 4.5/5</p>
+                        <h3 class="price">180$</h3>
+                    </button>
+                </article>
+                <!--  Producto 3-->
+                <article class="product-card">
+                    <button>
+                        <a href="Product-page.html">
+                            <img src="media/items/recomendacion4.png" alt="camisa">
+                        </a>
+                        <h2>Black Striped T-shirt</h2>
+                        <p>⭐⭐⭐⭐⭐ 5.0/5</p>
+                        <h3 class="price">120$ <span class="old">150$</span><span class="discount_view">-30%</span></h3>
+                    </button>
+                </article>
+                <!--  Producto 4-->
+                <article class="product-card">
+                    <button>
+                        <a href="Product-page.html">
+                            <img src="media/items/item2.png" alt="pantalon">
+                        </a>
+                        <h2>SKINNY FIT JEANS</h2>
+                        <p>⭐⭐⭐ 3.5/5</p>
+                        <h3 class="price">240$ <span class="old">260$</span><span class="discount_view">-20%</span></h3>
+                    </button>
+                </article>
+                <!--  Producto 5-->
+                <article class="product-card">
+                    <button>
+                        <a href="Product-page.html">
+                            <img src="media/items/item3.png" alt="camisa">
+                        </a>
+                        <h2>CHECKERED SHIRT</h2>
+                        <p>⭐⭐⭐⭐ 4.5/5</p>
+                        <h3 class="price">180$</h3>
+                    </button>
+                </article>
+                <!--  Producto 6-->
+                <article class="product-card">
+                    <button>
+                        <a href="Product-page.html">
+                            <img src="media/items/item4.png" alt="camisa">
+                        </a>
+                        <h2>SLEEVE STRIPED T-SHIRT</h2>
+                        <p>⭐⭐⭐⭐ 4.5/5</p>
+                        <h3 class="price">130$ <span class="old">160$</span><span class="discount_view">-30%</span></h3>
+                    </button>
+                </article>
+                <!--  Producto 7-->
+                <article class="product-card">
+                    <button>
+                        <a href="Product-page.html">
+                            <img src="media/items/item5.png" alt="camisa">
+                        </a>
+                        <h2>VERTICAL STRIPED SHIRT</h2>
+                        <p>⭐⭐⭐⭐⭐ 5.0/5</p>
+                        <h3 class="price">212$ <span class="old">232$</span><span class="discount_view">-20%</span></h3>
+                    </button>
+                </article>
+                <!--  Producto 8-->
+                <article class="product-card">
+                    <button>
+                        <a href="Product-page.html">
+                            <img src="media/items/item6.png" alt="camisa">
+                        </a>
+                        <h2>COURAGE GRAPHIC T-SHIRT</h2>
+                        <p>⭐⭐⭐⭐ 4.0/5</p>
+                        <h3 class="price">145$</h3>
+                    </button>
+                </article>
+                <!--  Producto 9-->
+                <article class="product-card">
+                    <button>
+                        <a href="Product-page.html">
+                            <img src="media/items/recomendacion2.png" alt="short">
+                        </a>
+                        <h2>LOOSE FIT BERMUDA SHORTS</h2>
+                        <p>⭐⭐⭐ 3.0/5</p>
+                        <h3 class="price">80$</h3>
+                    </button>
+                </article>
+            </div>
+
+            <!-- PAGINATION -->
+            <div class="pagination">
+                <button>Previous</button>
+                <div class="number-buttons">
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>...</span>
+                    <span>10</span>
+                </div>
+                
+                <button>Next</button>
+            </div>
+        </main>
+    </section>
+
+
 
         <!-- NEWSLETTER -->
     <section class="newsletter">
