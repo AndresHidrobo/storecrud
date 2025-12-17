@@ -291,3 +291,159 @@
     background: #df6c6c;
     border-radius: 5px;
 }
+
+
+/* =============================================================*/
+/* responsive para movil */
+@media (max-width: 768px){
+
+    body {
+        overflow-x: hidden;
+    }
+    .item-detail {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+    .item-gallery{
+        flex-direction: column-reverse;
+    }
+    .preview-img {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 5px;
+        justify-content: space-around;
+    }
+    .preview-img img {
+        margin: 0;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .main-img {
+        margin: 0;
+        height: 300px;
+    }
+
+    .main-img img {
+        height: 100%;
+        object-fit: contain;
+        border-radius: 20%;
+    }
+    /* Data item */
+    .text-up {
+        line-height: 30px;
+        margin: 15px 0;
+    }
+
+    .data-item h1 {
+        font-size: 24px;
+    }
+
+    .data-item h2 {
+        font-size: 18px;
+    }
+
+    .data-item p {
+        font-size: 14px;
+    }
+
+    /* Option menu */
+    .option-menu {
+        padding: 15px 0;
+    }
+
+    .color-btn button {
+        height: 40px;
+        width: 40px;
+        margin: 10px 10px 10px 0;
+    }
+
+    .size-btn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .size-btn button {
+        margin: 0;
+        padding: 12px;
+        width: 100%;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .quantity {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .add-cart {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Reviews */
+    .tabs {
+        gap: 20px;
+        font-size: 14px;
+        overflow-x: auto;
+    }
+
+    .reviews-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .reviews-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .reviews-actions select {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .write-review {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+    /* Comentarios en una columna */
+    .bloque_comentarios {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .comentario_usuario {
+        padding: 15px;
+    }
+
+    /* Items recomendados */
+    .items h1 {
+        font-size: 28px;
+        padding: 0 15px;
+    }
+
+    .show_items {
+        flex-direction: row;
+        padding: 0 15px;
+        overflow-x: scroll;
+        align-items: start;
+    }
+    .show_items > div {
+        width: 100%;
+        
+    }
+        
+    }
+    .items img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+    }

@@ -6,22 +6,9 @@
     background: #F2F0F1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* 3 columnas iguales */
     gap: 20px;
-    /* separación entre tarjetas */
 }
-.estrella1{
-    position: absolute;
-    margin-left: 50%;
-    margin-top: 15%;
-    height: 80px;
-}
-.estrella2{
-    position: absolute;
-    margin-left: 90%;
-    margin-top: 5%;
-    height: 130px;
-}
+
 .Hero p {
     font-family: Ubuntu;
     margin: 20px;
@@ -199,81 +186,180 @@
 }
 
 /* =============================================================================== */
-    /* CONTENEDOR GENERAL */
-    body {
-        overflow-x: hidden;
-    }
+/* responsive para movil*/
+@media (max-width: 768px) {
+
     /* HERO */
     .Hero {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 0px;
+        align-items: flex-start;
+        text-align: left;
+        gap: 0;
+        padding: 20px;
     }
+
+    .Hero_text {
+        width: 100%;
+    }
+
     .Hero_text h1 {
-        font-size: 32px;
+        font-size: 36px;
         line-height: 1.2;
+        margin: 10px 0;
     }
 
     .Hero_text p {
         font-size: 14px;
+        margin: 15px 0;
+        color: #000000;
+    }
+
+    .hero_img {
+        width: 100%;
+        margin: 0;
     }
 
     .hero_img img {
-        max-width: 99%;
+        width: 100%;
         height: auto;
-    }
-    .estrella1{
-        display: none;
-    }
-    .estrella2{
-        display: none;
+        margin: 0;
     }
 
-    .shop-button{
-        justify-self: center;
-        display: block;
-        margin: 40px 0;
-        width: 95%;
+    .shop-button {
+        width: 100%;
+        margin: 20px 0;
+        padding: 16px;
+        font-size: 16px;
     }
+
     /* ESTADÍSTICAS */
     .stats {
-        flex-direction: column;
-        gap: 12px;
-        margin-left: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+        margin: 20px 0;
+        width: 100%;
+        padding: 20px 0;
+        border-top: 1px solid #000000;
+    }
+
+    .stats > div {
+        text-align: center;
+    }
+
+    .stats h2 {
+        font-size: 24px;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .stats p {
+        font-size: 12px;
+        margin: 5px 0;
+        color: #00000099;
     }
 
     /* MARCAS */
     .Marcas {
         display: flex;
-        overflow-x: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
         gap: 20px;
-        padding: 10px 0;
+        padding: 30px 20px;
+        background: #000;
+    }
+
+    .Marcas button {
+        background: #000;
+        flex: 1;
+        min-width: 80px;
     }
 
     .Marcas img {
-        height: 56px;
-        flex-shrink: 0;
+        height: 24px;
+        width: auto;
+        filter: brightness(0) invert(1);
     }
 
-    /* PRODUCTOS */
+    /* ITEMS */
+    .items {
+        padding: 0 20px;
+        margin-top: 40px;
+    }
+
+    .items h1 {
+        font-size: 32px;
+        text-align: left;
+        margin: 30px 0 20px 0;
+    }
+
     .show_items {
         display: flex;
-        overflow-x: auto;
-        gap: 15px;
+        flex-direction: row;
+        overflow-x: scroll;
+        gap: 20px;
+        margin: 20px 0;
     }
 
-    .items {
-        height: 100%;
+    .show_items > div {
+        width: 100%;
+    }
+
+    .items img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .show_items h2 {
+        font-size: 16px;
+        margin: 10px 0 5px 0;
+        text-align: left;
+    }
+
+    .show_items p {
+        font-size: 14px;
+        margin: 5px 0;
+        text-align: left;
+    }
+
+    .show_items h3 {
+        font-size: 20px;
+        margin: 5px 0;
+        text-align: left;
+    }
+
+    #view_button1,
+    #view_button2 {
+        width: 100%;
+        margin: 20px 0;
+        padding: 14px;
+        font-size: 16px;
     }
 
     /* BROWSE BY STYLE */
+    .dress-style {
+        margin: 40px 20px;
+        padding: 40px 20px;
+    }
+
+    .dress-style h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
     .style-grid {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 20px;
     }
 
     .style-card {
-        height: 120px;
+        height: 190px;
     }
+
+    .style-card h3 {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+}

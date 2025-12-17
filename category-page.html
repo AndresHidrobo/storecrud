@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casual | CRUD.STORE</title>
     <link rel="stylesheet" href="css/category.css">
 </head>
+
 <body>
-        <!-- Header -->
+    <!-- Header -->
     <section class="top">Sign up and get 20% off to your first order. <a href="">Sign Up Now</a>
     </section>
     <header>
@@ -30,14 +32,20 @@
             <button><a href=""><img src="media/icon user.png" alt=""></a></button>
         </div>
     </header>
+
     <!-- Breadcrumb -->
     <div class="map">
         <a href="index.html">Home</a> › <span>Casual</span>
     </div>
+
+    <!-- Checkbox para controlar filtros (solo móvil) -->
+    <input type="checkbox" id="filter-toggle" style="display: none;">
+    <label for="filter-toggle" class="filter-overlay"></label>
+
     <section class="shop-container">
         <!-- SIDEBAR -->
-        <aside class="filters">
-            <h3>Filters</h3>
+        <aside class="filters" id="filters">
+            <h3>Filters <label for="filter-toggle" class="close-filters">✕</label></h3>
 
             <div class="filter-group">
                 <ul>
@@ -51,8 +59,12 @@
 
             <div class="filter-group">
                 <h4>Price</h4>
-                <input type="range" min="50" max="200">
-                <div class="price-range">$50 - $200</div>
+                <input type="range">
+                <div class="price-range">
+                    <span>$50</span>
+                    <span>-</span>
+                    <span>$200</span>
+                </div>
             </div>
 
             <div class="filter-group">
@@ -61,7 +73,12 @@
                     <button class="c green"></button>
                     <button class="c red"></button>
                     <button class="c yellow"></button>
+                    <button class="c orange"></button>
                     <button class="c blue"></button>
+                    <button class="c deepblue">✔️</button>
+                    <button class="c purple"></button>
+                    <button class="c pink"></button>
+                    <button class="c white"></button>
                     <button class="c black"></button>
                 </div>
             </div>
@@ -69,9 +86,15 @@
             <div class="filter-group">
                 <h4>Size</h4>
                 <div class="sizes">
-                    <span>XX-Small</span><span>X-Small</span><span>Small</span><span>Medium</span>
-                    <span class="active">Large</span><span>X-Large</span><span>XX-Large</span>
-                    <span>3X-Large</span><span>4X-Large</span>
+                    <span>XX-Small</span>
+                    <span>X-Small</span>
+                    <span>Small</span>
+                    <span>Medium</span>
+                    <span class="active">Large</span>
+                    <span>X-Large</span>
+                    <span>XX-Large</span>
+                    <span>3X-Large</span>
+                    <span>4X-Large</span>
                 </div>
             </div>
 
@@ -90,9 +113,14 @@
 
         <!-- PRODUCTS -->
         <main class="products">
+            <!-- Botón para abrir filtros en móvil -->
+            <label for="filter-toggle" class="filter-toggle-label">
+                Filters
+            </label>
+
             <div class="products-header">
                 <h2>Casual</h2>
-                <span>Showing 1–10 of 100 Products  Sort by: <b>Most Popular</b></span>
+                <span>Showing 1–10 of 100 Products Sort by: <b>Most Popular</b></span>
             </div>
 
             <div class="products-grid">
@@ -106,7 +134,7 @@
                         </a>
                         <h2>Gradient Graphic T-shirt</h2>
                         <p>⭐⭐⭐ 3.5/5</p>
-                        <h3 class="price">145$</h3>
+                        <h3 class="price">$145</h3>
                     </button>
                 </article>
                 <!--  Producto 2-->
@@ -117,7 +145,7 @@
                         </a>
                         <h2>Polo with Tipping Details</h2>
                         <p>⭐⭐⭐⭐ 4.5/5</p>
-                        <h3 class="price">180$</h3>
+                        <h3 class="price">$180</h3>
                     </button>
                 </article>
                 <!--  Producto 3-->
@@ -128,7 +156,7 @@
                         </a>
                         <h2>Black Striped T-shirt</h2>
                         <p>⭐⭐⭐⭐⭐ 5.0/5</p>
-                        <h3 class="price">120$ <span class="old">150$</span><span class="discount_view">-30%</span></h3>
+                        <h3 class="price">$120 <span class="old">$150</span><span class="discount_view">-30%</span></h3>
                     </button>
                 </article>
                 <!--  Producto 4-->
@@ -139,7 +167,7 @@
                         </a>
                         <h2>SKINNY FIT JEANS</h2>
                         <p>⭐⭐⭐ 3.5/5</p>
-                        <h3 class="price">240$ <span class="old">260$</span><span class="discount_view">-20%</span></h3>
+                        <h3 class="price">$240 <span class="old">$260</span><span class="discount_view">-20%</span></h3>
                     </button>
                 </article>
                 <!--  Producto 5-->
@@ -150,7 +178,7 @@
                         </a>
                         <h2>CHECKERED SHIRT</h2>
                         <p>⭐⭐⭐⭐ 4.5/5</p>
-                        <h3 class="price">180$</h3>
+                        <h3 class="price">$180</h3>
                     </button>
                 </article>
                 <!--  Producto 6-->
@@ -161,7 +189,7 @@
                         </a>
                         <h2>SLEEVE STRIPED T-SHIRT</h2>
                         <p>⭐⭐⭐⭐ 4.5/5</p>
-                        <h3 class="price">130$ <span class="old">160$</span><span class="discount_view">-30%</span></h3>
+                        <h3 class="price">$130 <span class="old">$160</span><span class="discount_view">-30%</span></h3>
                     </button>
                 </article>
                 <!--  Producto 7-->
@@ -172,7 +200,7 @@
                         </a>
                         <h2>VERTICAL STRIPED SHIRT</h2>
                         <p>⭐⭐⭐⭐⭐ 5.0/5</p>
-                        <h3 class="price">212$ <span class="old">232$</span><span class="discount_view">-20%</span></h3>
+                        <h3 class="price">$212 <span class="old">$232</span><span class="discount_view">-20%</span></h3>
                     </button>
                 </article>
                 <!--  Producto 8-->
@@ -183,7 +211,7 @@
                         </a>
                         <h2>COURAGE GRAPHIC T-SHIRT</h2>
                         <p>⭐⭐⭐⭐ 4.0/5</p>
-                        <h3 class="price">145$</h3>
+                        <h3 class="price">$145</h3>
                     </button>
                 </article>
                 <!--  Producto 9-->
@@ -194,7 +222,7 @@
                         </a>
                         <h2>LOOSE FIT BERMUDA SHORTS</h2>
                         <p>⭐⭐⭐ 3.0/5</p>
-                        <h3 class="price">80$</h3>
+                        <h3 class="price">$80</h3>
                     </button>
                 </article>
             </div>
@@ -209,7 +237,7 @@
                     <span>...</span>
                     <span>10</span>
                 </div>
-                
+
                 <button>Next</button>
             </div>
         </main>
@@ -217,7 +245,7 @@
 
 
 
-        <!-- NEWSLETTER -->
+    <!-- NEWSLETTER -->
     <section class="newsletter">
         <div class="newsletter-content">
             <h2>STAY UP TO DATE ABOUT OUR<br>LATEST OFFERS</h2>
@@ -239,7 +267,7 @@
             <div class="footer-brand">
                 <h3>CRUD.STORE</h3>
                 <p>
-                    We have clothes that suits your style and which you’re proud to wear.
+                    We have clothes that suits your style and which you're proud to wear.
                     From women to men.
                 </p>
 
@@ -247,7 +275,8 @@
                     <img src="media/social media/social media 1.png" alt="Twitter">
                     <img src="media/social media/social media 2.png" alt="Facebook">
                     <img src="media/social media/social media 3.png" alt="Instagram">
-                    <a href="https://github.com/AndresHidrobo" target="_blank"><img src="media/social media/social media 4.png" alt="Github"></a>
+                    <a href="https://github.com/AndresHidrobo" target="_blank"><img
+                            src="media/social media/social media 4.png" alt="Github"></a>
                 </div>
             </div>
 
@@ -299,5 +328,32 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript para toggle de filtros -->
+    <script>
+        function toggleFilters() {
+            const filters = document.getElementById('filters');
+            filters.classList.toggle('active');
+            document.body.style.overflow = filters.classList.contains('active') ? 'hidden' : 'auto';
+        }
+
+        // Cerrar filtros al hacer clic fuera del panel
+        document.addEventListener('click', function (event) {
+            const filters = document.getElementById('filters');
+            const filterToggle = document.querySelector('.filter-toggle');
+
+            if (window.innerWidth <= 768 && filters.classList.contains('active')) {
+                if (!filters.contains(event.target) && !filterToggle.contains(event.target)) {
+                    toggleFilters();
+                }
+            }
+        });
+
+        // Prevenir que el clic dentro del panel cierre los filtros
+        document.getElementById('filters').addEventListener('click', function (event) {
+            event.stopPropagation();
+        });
+    </script>
 </body>
+
 </html>

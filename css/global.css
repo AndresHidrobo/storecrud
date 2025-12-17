@@ -15,13 +15,16 @@
     font-family: Ubuntu;
     color: rgb(114, 114, 114);
 }
+
 .map span {
     color: rgb(0, 0, 0);
 }
+
 .map a {
     color: rgb(114, 114, 114);
     text-decoration: none;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -31,6 +34,7 @@
 body {
     font-family: Lilita1;
 }
+
 /* Estilo global para el header */
 header {
     font-family: Ubuntu;
@@ -46,6 +50,7 @@ header {
     background: black;
     color: white;
     text-align: center;
+    padding: 10px;
 }
 
 .top a {
@@ -66,6 +71,7 @@ header {
 
 nav a {
     color: black;
+    text-decoration: none;
 }
 
 .nav-flex {
@@ -87,13 +93,21 @@ nav a {
     width: 100%;
     padding: 10px 35px;
     border-radius: 20px;
+    border: 1px solid #ddd;
     outline: none;
+    background: #f5f5f5;
 }
 
 /* iconos en header */
 .header_iconos button {
     background: none;
     border: none;
+    cursor: pointer;
+}
+
+.header_iconos img {
+    width: 24px;
+    height: 24px;
 }
 
 
@@ -134,6 +148,10 @@ nav a {
     padding: 12px 20px;
 }
 
+.input-box p {
+    margin-right: 10px;
+}
+
 .input-box input {
     border: none;
     outline: none;
@@ -146,6 +164,7 @@ nav a {
     border: none;
     font-weight: 600;
     cursor: pointer;
+    background: white;
 }
 
 /* FOOTER */
@@ -187,6 +206,7 @@ nav a {
     border-radius: 90%;
     cursor: pointer;
     height: 30px;
+    width: 30px;
 }
 
 .footer-links {
@@ -197,11 +217,14 @@ nav a {
 
 .footer-links h4 {
     margin-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 2px;
 }
 
 .footer-links p {
     margin-bottom: 10px;
     color: #555;
+    cursor: pointer;
 }
 
 /* FOOTER BOTTOM */
@@ -215,26 +238,37 @@ nav a {
     font-family: ubuntu;
 }
 
+.payments {
+    display: flex;
+    gap: 10px;
+}
+
 .payments img {
     background: white;
     border: 1px rgb(167, 167, 167) solid;
-    border-radius: 15%;
-    padding: 1px;
+    border-radius: 8px;
+    padding: 5px;
     cursor: pointer;
     height: 30px;
-    margin-left: 10px;
 }
+
 /* =================================================================================================== */
 /* seccion de comentarios */
 .comentarios {
     align-items: center;
     justify-content: space-between;
+    padding: 60px;
 }
 
 .upper_info {
     display: flex;
     justify-content: center;
     justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.upper_info h2 {
+    font-size: 48px;
 }
 
 .upper_info p {
@@ -252,83 +286,246 @@ nav a {
 
 .comentario_usuario {
     border: rgb(199, 198, 198) 1px solid;
-    padding: 15px;
+    padding: 20px;
     border-radius: 20px;
     line-height: 1.5em;
 }
 
 .comentario_usuario p {
     font-family: ubuntu;
+    color: #00000099;
+}
+
+.comentario_usuario h3 {
+    margin: 10px 0;
 }
 
 
 /* =============================================================*/
 /* responsive para movil */
 @media (max-width: 768px) {
-
-    
+    body {
+        overflow-x: hidden;
+    }
+    /* TOP BAR */
+    .top {
+        font-size: 12px;
+        padding: 8px;
+    }
 
     /* HEADER */
     header {
-        padding: 10px 16px;
-        flex-wrap: nowrap;
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .Logo {
+        order: 2;
+        flex: 1;
+        font-size: 25px;
+    }
+
+    .Nav {
+        order: 1;
+        position: relative;
+    }
+
+    .Nav::before {
+        content: '☰';
+        font-size: 24px;
+        cursor: pointer;
+        color: #000;
     }
 
     nav {
         display: none;
     }
 
+    .header_iconos {
+        order: 3;
+        display: flex;
+        gap: 12px;
+    }
+
+    .header_iconos img {
+        width: 20px;
+        height: 20px;
+    }
+
     .Barra_busqueda {
-        max-width: 180px;
-        padding: 8px 12px;
+        order: 4;
+        width: 100%;
+        padding: 0;
+        margin-top: 10px;
         display: none;
     }
 
+    .Barra_busqueda input {
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 14px;
+    }
 
-    /* TESTIMONIOS */
+    .map {
+        font-size: 12px;
+        margin: 15px;
+    }
+
+    /* COMENTARIOS */
+    .comentarios {
+        padding: 40px 20px;
+    }
+
+    .upper_info {
+        margin-bottom: 30px;
+    }
+
+    .upper_info h2 {
+        font-size: 32px;
+    }
+
+    .upper_info p {
+        font-size: 24px;
+    }
+
     .bloque-comentarios {
         flex-direction: column;
+        padding: 0;
+        gap: 20px;
     }
 
     .comentario_usuario {
         width: 100%;
+        padding: 20px;
+    }
+
+    .comentario_usuario p:first-child {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .comentario_usuario h3 {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .comentario_usuario p:last-child {
+        font-size: 14px;
+        line-height: 1.6;
     }
 
     /* NEWSLETTER */
     .newsletter {
-        margin: 16px;
-        padding: 24px;
-        border-radius: 24px;
+        margin: 20px;
+        padding: 30px 20px;
+        border-radius: 20px;
     }
 
     .newsletter-content {
         flex-direction: column;
         text-align: center;
-        gap: 16px;
+        gap: 30px;
+    }
+
+    .newsletter-content h2 {
+        font-size: 32px;
+        line-height: 1.2;
     }
 
     .newsletter-form {
         width: 100%;
+        gap: 15px;
+    }
+
+    .input-box {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    .input-box input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
     }
 
     /* FOOTER */
+    .footer {
+        padding: 40px 20px;
+    }
+
     .footer-top {
         flex-direction: column;
-        gap: 32px;
+        gap: 35px;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer-brand h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .footer-brand p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .socials {
+        gap: 12px;
+    }
+
+    .socials img {
+        width: 36px;
+        height: 36px;
     }
 
     .footer-links {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .footer-links h4 {
+        font-size: 14px;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    .footer-links p {
+        font-size: 14px;
+        margin-bottom: 12px;
     }
 
     .footer-bottom {
         flex-direction: column;
         text-align: center;
-        gap: 12px;
+        gap: 20px;
+        padding-top: 20px;
+        margin-top: 30px;
     }
-    .payments{
-        display: flex;
-        justify-items: center;
+
+    .footer-bottom p {
+        font-size: 12px;
+        color: #00000099;
+    }
+
+    .payments {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .payments img {
+        height: 28px;
+        padding: 4px;
     }
 }
