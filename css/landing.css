@@ -198,3 +198,82 @@
     font-weight: 700;
 }
 
+/* =============================================================================== */
+    /* CONTENEDOR GENERAL */
+    body {
+        overflow-x: hidden;
+    }
+    /* HERO */
+    .Hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0px;
+    }
+    .Hero_text h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .Hero_text p {
+        font-size: 14px;
+    }
+
+    .hero_img img {
+        max-width: 99%;
+        height: auto;
+    }
+    .estrella1{
+        display: none;
+    }
+    .estrella2{
+        display: none;
+    }
+
+    .shop-button{
+        justify-self: center;
+        display: block;
+        margin: 40px 0;
+        width: 95%;
+    }
+    /* ESTADÍSTICAS */
+    .stats {
+        flex-direction: column;
+        gap: 12px;
+        margin-left: 0;
+    }
+
+    /* MARCAS */
+    .Marcas {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 10px 0;
+    }
+
+    .Marcas img {
+        height: 56px;
+        flex-shrink: 0;
+    }
+
+    /* PRODUCTOS */
+    .show_items {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+    }
+
+    .items {
+        height: 100%;
+    }
+
+    /* BROWSE BY STYLE */
+    .style-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .style-card {
+        height: 120px;
+    }
